@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p:nth-child(3){
+            color:red;
+            background-color: yellow;
+        }
+        .email:valid{
+            color:green;
+            border: 10px solid blue;
+        }
+        .email:invalid{
+            color: red;
+            border: 10px solid yellow;
+        } */
+         p::first-letter{
+            color: red;
+            background-color: yellow;
+         }
+         h1::before{
+            content: "Hello  ";
+            color: green;
+         }
+         h1::after{
+            content: ", Coffee";
+            color: brown;
+         }
+         h1::selection{
+            background-color: green;
+         }
+
+    </style>
+</head>
+<body>
+<form>
+    <h1>Morning</h1>
+        <input type="email" class="email" required><br><br>
+    <input type="Submit">
+</form>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet officiis cumque eaque dolor corrupti. Nihil, commodi suscipit enim nemo quia amet, repellendus aliquid incidunt saepe unde esse asperiores sint.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet officiis cumque eaque dolor corrupti. Nihil, commodi suscipit enim nemo quia amet, repellendus aliquid incidunt saepe unde esse asperiores sint.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet officiis cumque eaque dolor corrupti. Nihil, commodi suscipit enim nemo quia amet, repellendus aliquid incidunt saepe unde esse asperiores sint.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet officiis cumque eaque dolor corrupti. Nihil, commodi suscipit enim nemo quia amet, repellendus aliquid incidunt saepe unde esse asperiores sint.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet officiis cumque eaque dolor corrupti. Nihil, commodi suscipit enim nemo quia amet, repellendus aliquid incidunt saepe unde esse asperiores sint.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet officiis cumque eaque dolor corrupti. Nihil, commodi suscipit enim nemo quia amet, repellendus aliquid incidunt saepe unde esse asperiores sint.</p>
+
+</body>
+</html>
