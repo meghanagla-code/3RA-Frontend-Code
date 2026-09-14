@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            border: 2px solid red;
+            background-color: yellow;
+            width: 100px;
+            height: 80px;
+            animation-name: super;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: 10;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes super{
+            0%{
+                background-color: red;
+            }
+            50%{
+                background-color: green;
+            }
+            75%{
+                background-color: purple;
+                transform: rotate(80deg);
+            }
+            100%{
+                background-color: blue;
+                transform: translate(100px, 200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation Properties</h1>
+    <div class="div"></div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            border: 2px solid red;
+            background-color: pink;
+            padding:60px;
+            margin: 30px;
+            width:400px;
+            height:180px;
+        }
+        .block{
+            display : block;
+            border: 2px solid black;
+            color: white;
+            background-color: blue;
+            padding: 10px;
+            margin: 10px;
+        }
+        .inline{
+            
+            display:inline-block;
+            width:100px;
+            height:60px;
+            border: 2px solid black;
+            color: white;
+            background-color: blue;
+            padding: 10px;
+            margin: 10px;
+
+        }
+        .div-flex{
+           
+            border: 2px solid red;
+            background-color: pink;
+            padding:60px;
+            margin: 30px;
+            width:700px;
+            height:230px;
+            display:grid;
+            grid-template-columns: repeat(4   , 1fr);
+            /* flex-wrap:wrap; */
+            /* flex-direction:row; */
+            gap:10px;
+            /* justify-content: flex-end;
+            align-items: flex-end; */
+            
+        }
+        .flex{
+            border: 2px solid black;
+            color: white;
+            background-color: blue;
+            padding: 10px;
+            margin: 10px;
+            height:50px;
+            width:120px;
+
+             
+        }
+    </style>
+</head>
+<body>
+    <h1>Block Display</h1>
+    <div class="div">
+        <span class="block">Hii</span>
+        <span class="block">Hello</span>
+        <span class="block">Welcome</span>
+    </div>
+    <h1>Inline Display</h1>
+    <div class="div">
+        <h1 class="inline">Hii</h1>
+        <h1 class="inline">Hello</h1>
+        <h1 class="inline">Welcome</h1>
+    </div>
+    <h1>Flex Display</h1>
+    <div class="div-flex">
+        <h1 class="flex">Hii</h1>
+        <h1 class="flex">Hello</h1>
+        <h1 class="flex">Welcome</h1>
+                <h1 class="flex">Hii</h1>
+        <h1 class="flex">Hello</h1>
+        <h1 class="flex">Welcome</h1>
+        <h1 class="flex">Hii</h1>
+        <h1 class="flex">Hello</h1>
+        <h1 class="flex">Welcome</h1>
+    </div>
+    
+</body>
+</html>
