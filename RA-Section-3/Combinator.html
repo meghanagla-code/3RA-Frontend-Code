@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .descendant p{
+            color: blue;
+            background-color: black;
+        }
+        .child >p{
+            color: white;
+            background-color: black;
+        }
+        .headone + p{
+            color: white;
+            background-color: black;
+        }
+        .headtwo ~ p{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinators</h1>
+    <h1>1. Descendant Combinator</h1>
+    <div class="descendant">
+        <p>Paragraph 1</p>
+        <section>
+            <p>Paragraph 2</p>
+            <div>
+                <p>Paragraph 3</p>
+            </div>
+        </section>
+    </div>
+    <p>Paragraph 4</p>
+
+    <h1>2. Child Combinator</h1>
+    <div class="child">
+        <p>Paragraph 1</p>
+        <section>
+            <p>Paragraph 2</p>
+            <div>
+                <p>Paragraph 3</p>
+            </div>
+        </section>
+    </div>
+    <p>Paragraph 4</p>
+
+    <h1>3. Adjacent Sibling Combinator</h1>
+    <h1 class="headone">Dhruv</h1>
+    <p>Abhay</p>
+
+    <h1>4. General Sibling Combinator</h1>
+    <h1 class="headtwo">Nikita</h1>
+    <p>Radhika</p>
+    <p>Avinash</p>
+</body>
+</html>
